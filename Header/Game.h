@@ -5,7 +5,7 @@
 #include <iostream>
 #include <vector>
 
-// --- ENUM-I STANJA IGRE ---
+// ENUM-I STANJA IGRE
 enum GameState {
     ORDER_BUTTON,
     COOKING,
@@ -27,7 +27,7 @@ enum IngredientState {
     FINALIZING
 };
 
-// --- GLOBALNE PROMENLJIVE STANJA (EXTERN) ---
+// GLOBALNE PROMENLJIVE STANJA (EXTERN)
 extern GameState current_state;
 extern IngredientState current_ingredient;
 extern float patty_current_X;
@@ -69,7 +69,7 @@ struct Spill {
 
 extern std::vector<Spill> spills; // Lista prosutih mrlja
 
-// --- GLOBALNI OPENGL OBJEKTI (EXTERN) ---
+// GLOBALNI OPENGL OBJEKTI (EXTERN)
 extern unsigned int VAO_Button, VBO_Button;
 extern unsigned int VAO_Bell, VBO_Bell;
 extern unsigned int VAO_Stove, VBO_Stove;
@@ -110,7 +110,7 @@ extern GLFWcursor* handCursor;
 extern GLFWcursor* panCursor;
 
 
-// --- KONSTANTE ---
+// KONSTANTE
 const int PATTY_SLICES = 40;
 const float PATTY_RADIUS = 0.12f;
 const float PATTY_THICKNESS = 0.05f;
@@ -162,7 +162,7 @@ const float SIGNATURE_CENTER_Y = 1.0f - SIGNATURE_HEIGHT / 2.0f - 0.1f; // Blizu
 const float SIGNATURE_ALPHA = 0.9f;
 const float SIGNATURE_SCALE = 1.2f;
 
-// --- INTERFEJS FUNKCIJE ---
+// INTERFEJS FUNKCIJE
 void initGeometry(int screenWidth, int screenHeight);
 void initShaders();
 

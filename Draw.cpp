@@ -396,7 +396,7 @@ void initGeometry(int screenWidth, int screenHeight) {
     glBindBuffer(GL_ARRAY_BUFFER, VBO_BunBottom);
     glBufferData(GL_ARRAY_BUFFER, sizeof(verticesBunBottom), verticesBunBottom, GL_STATIC_DRAW);
     V_ATTRIB_POINTER_TEX()
-        glBindVertexArray(0);
+       glBindVertexArray(0);
 
     // 7. TANJIR (Krug)
     float verticesPlate[(PATTY_SLICES + 2) * 5];

@@ -18,7 +18,7 @@ bool isIngredientPlaced(float ingX, float ingY,
 void placeNextIngredient() {
     switch (current_ingredient) {
     case BUN_BOTTOM:
-        // Ažuriraj stack_height na vrh postavljenog sastojka
+        // Ažurira stack_height na vrh postavljenog sastojka
         stack_height = PLATE_Y + BUN_HEIGHT / 2.0f;
         current_ingredient = PATTY_PLACING;
         std::cout << "Pljeskavica!" << std::endl;
@@ -114,7 +114,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     }
     // --- Pomeranje u stanju ASSEMBLING (Sastojci) ---
     else if (current_state == ASSEMBLING) {
-        // Kontrolišeš komponentu koja se TRENUTNO postavlja
+        // Kontroliše komponentu koja se TRENUTNO postavlja
         float* current_X = nullptr;
         float* current_Y = nullptr;
 

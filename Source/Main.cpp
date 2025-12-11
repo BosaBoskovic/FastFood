@@ -70,7 +70,6 @@ int main()
     }
     glDeleteProgram(colorShader);
     glDeleteProgram(textureShader);
-    glDeleteProgram(bunShader);
     glfwDestroyWindow(window);
     glfwTerminate();
     return 0;
